@@ -3,7 +3,7 @@
 Una aplicación desarrollada con **React y Java** para la venta de entradas de cine online, además de tener una parte de administración para gestionar las películas y sesiones.
 
 ## 🚀 Características principales
-- **React** con TypeScript.
+- **React** con JavaScript.
 - **Ruteo** mediante `react-router-dom`.
 - **CSS3** para el diseño responsive.
 - **Base de datos** alojada en MySQL(Añado Script principal).
