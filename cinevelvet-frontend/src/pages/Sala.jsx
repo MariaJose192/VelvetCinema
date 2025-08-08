@@ -65,7 +65,7 @@ const Sala = () => {
         }
     }, []);
 
-    if (loading) return <p>Cargando sala...</p>;
+    if (loading) return <p className='loader' ></p>;
     if (!sala || !sesion) return <p>No se encontró la sala o la sesión.</p>;
 
     //Método para seleccionar o deseleccionar las butacas, máximo 10

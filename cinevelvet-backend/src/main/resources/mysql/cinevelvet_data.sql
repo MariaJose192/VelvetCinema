@@ -1,11 +1,10 @@
 -- Inserción de 6 películas
 INSERT INTO pelicula (titulo, descripcion, duracion, fecha_estreno, genero, edades, trailer, portada, publicada) VALUES
-('Matrix', 'Un hacker descubre una realidad alternativa.', 136, '1997-12-19', 'Ciencia Ficción', 'No recomendada para menores de 16 años', 'https://www.youtube.com/watch?v=m8e-FF8MsqU', null, TRUE),
-('Titanic', 'Historia de amor a bordo de un transatlántico.', 195, '1997-12-19', 'Romance', 'Apta para todos los públicos', 'https://www.youtube.com/watch?v=2e-eXJ6HgkQ', null, TRUE),
-('El Rey León', 'El viaje de Simba hacia su destino como rey.', 88, '1994-06-24', 'Animación', 'Apta para todos los públicos', 'https://www.youtube.com/watch?v=7TavVZMewpY', null, TRUE),
-('Avatar', 'Una aventura en el mundo de Pandora.', 162, '2009-12-18', 'Fantasía', 'No recomendada para menores de 12 años', 'https://www.youtube.com/watch?v=5PSNL1qE6VY', null, TRUE),
-('Parásitos', 'Una crítica social en forma de thriller.', 132, '2019-05-30', 'Drama', 'No recomendada para menores de 16 años', 'https://www.youtube.com/watch?v=5xH0HfJHsaY', null, TRUE),
-('Interstellar', 'Viaje interestelar para salvar la humanidad.', 169, '2014-11-07', 'Ciencia Ficción', 'No recomendada para menores de 12 años', 'https://www.youtube.com/watch?v=zSWdZVtXT7E', null, TRUE);
+('Los tipos malos 2', 'Los atracadores reformados vuelven a la acción en una nueva aventura animada.', 87, '2025-08-06', 'Animación', 'Apta para todos los públicos', "https://www.youtube.com/watch?v=8i8KXqdpP98&t=7s", NULL, TRUE),
+('Los Cuatro Fantásticos: Primeros pasos', 'El grupo más icónico de Marvel se enfrenta a su mayor amenaza.', 130, '2025-07-24', 'Acción', 'No recomendada para menores de 7 años', NULL, NULL, TRUE),
+('Devuélvemela', 'Un inquietante thriller sobre secretos familiares y posesiones.', 99, '2025-08-01', 'Terror', 'No recomendada para menores de 18 años', NULL, NULL, TRUE),
+('Padre no hay más que uno 5', 'Javier se enfrenta al caos de una familia aún más numerosa.', 100, '2025-08-06', 'Comedia', 'Apta para todos los públicos', NULL, NULL, TRUE),
+('Jurassic World: El Renacer', 'Dinosaurios y humanos luchan por la supervivencia en una nueva era.', 133, '2025-08-06', 'Ciencia Ficción', 'No recomendada para menores de 12 años', NULL, NULL, TRUE);
 
 
 -- Inserción de 6 salas
@@ -18,23 +17,38 @@ INSERT INTO sala (nombre, filas, columnas, capacidad) VALUES
 ('Sala F', 9, 10, 90);
 
 -- Asumiendo que tienes películas con IDs del 1 al 6 y salas con IDs del 1 al 3
+-- Día 1 - 2025-08-08
 INSERT INTO sesion (fecha_sesion, pelicula_id, sala_id) VALUES
--- Día 1
-('2025-06-20 16:00:00', 1, 1),
-('2025-06-20 18:30:00', 2, 2),
-('2025-06-20 20:00:00', 3, 3),
--- Día 2
-('2025-06-21 17:00:00', 4, 4),
-('2025-06-21 19:30:00', 5, 5),
-('2025-06-21 22:00:00', 6, 6),
--- Día 3
-('2025-06-22 15:45:00', 1, 2),
-('2025-06-22 18:00:00', 2, 3),
-('2025-06-22 20:15:00', 3, 4),
--- Día 4
-('2025-06-23 17:30:00', 4, 5),
-('2025-06-23 19:45:00', 5, 6),
-('2025-06-23 21:00:00', 6, 1);
+('2025-08-08 12:00:00', 1, 1),
+('2025-08-08 14:30:00', 2, 2),
+('2025-08-08 17:00:00', 3, 3),
+('2025-08-08 19:30:00', 4, 4),
+('2025-08-08 22:00:00', 5, 5);
+
+-- Día 2 - 2025-08-09
+INSERT INTO sesion (fecha_sesion, pelicula_id, sala_id) VALUES
+('2025-08-09 11:00:00', 2, 1),
+('2025-08-09 13:30:00', 1, 2),
+('2025-08-09 16:00:00', 5, 3),
+('2025-08-09 18:30:00', 3, 4),
+('2025-08-09 21:00:00', 4, 6);
+
+-- Día 3 - 2025-08-10
+INSERT INTO sesion (fecha_sesion, pelicula_id, sala_id) VALUES
+('2025-08-10 12:15:00', 4, 1),
+('2025-08-10 14:45:00', 5, 2),
+('2025-08-10 17:15:00', 2, 3),
+('2025-08-10 19:45:00', 3, 5),
+('2025-08-10 22:15:00', 1, 6);
+
+-- Día 4 - 2025-08-11
+INSERT INTO sesion (fecha_sesion, pelicula_id, sala_id) VALUES
+('2025-08-11 11:30:00', 3, 2),
+('2025-08-11 14:00:00', 1, 3),
+('2025-08-11 16:30:00', 5, 4),
+('2025-08-11 19:00:00', 2, 5),
+('2025-08-11 21:30:00', 4, 6);
+
 
 -- Sala A (ID 1), 8 filas x 10 butacas (ascendente)
 INSERT INTO butaca (fila, butaca, sala_id, bloqueada_hasta, usuario_id)
