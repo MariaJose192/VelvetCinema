@@ -47,13 +47,19 @@ Asegúrate de tener instalado:
    
 ---   
 
-## 🎥 Video demostración de la cartelera:
+## 🎥 Video demostración de la aplicación:
+
+**Cartelera y compra de entradas**
 
 https://github.com/user-attachments/assets/822472c1-d49d-44e7-9ab2-7c05299044ed
 
+**Panel administrativo para gestionar películas y sesiones:**
+
+https://github.com/user-attachments/assets/67856c0c-db23-441c-9b07-ed46f9a9e259
+
 ---
 
-## ✏️ Manual de instalación:
+## ✏️ Manual de usuario:
 
 ## 1. Página principal:
 
