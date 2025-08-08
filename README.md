@@ -47,7 +47,13 @@ Asegúrate de tener instalado:
    
 ---   
 
-## ⚙️ Instalación
+## 🎥 Video demostración de la cartelera:
+
+https://github.com/user-attachments/assets/822472c1-d49d-44e7-9ab2-7c05299044ed
+
+---
+
+## ✏️ Manual de instalación:
 
 ## 1. Página principal:
 
